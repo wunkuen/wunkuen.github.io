@@ -1,47 +1,176 @@
-/*Topgraphy */
-h1, h2, h3, h4, h5, h6, h6, p, ul, li, span, strong, em {
-}
+body {
+    background-color: lightyellow;
+  }
+  /*Animation Header*/
+  .headerbox {
+    background-color: beige;
+    width: 100%;
+    height: 80px;
+    background: url (pine.jpg);
+    background-size: 50px 50px;
+  }
+  
+  /*Animate title*/
+  
+  h1 {
+    font-size: 30px;
+    font-family: cursive;
+    color: brown;
+  }
 
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
-p{}
-ul, ol {}
-li {}
-blockquotes {}
+  h2 {
+      font-size: 12px;
+      color: red;
+  }
+  
+  .titlebox {
+    float: right;
+    top: 5px;
+    bottom: 10px;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+  }
 
-/*Base*/
-  html{}
-    body{}
-      a{}
-        img{}
-
-/*Same elements*/
-none{}
-flex {}
-cta{}
-
-/* Footer & Header */
-header {}
-nav  {
-  font-size: 14px;
-  font-family: Georgia;
-  text-align: center;
-}
-div{
-  width: 119px;
-  border: solid;
-  float: left;
-  padding: : 10px o;
-}
-logo {}
-footer {}
-footer a {}
-social {}
-
-/* Section-General Style */
-section {}
-article {}
+  .title1 {
+    height: 50%
+  }
+  
+  /*Logo Animation*/
+  .logo {
+    display: block;
+    border: 2px solid olive;
+    float: left;
+    padding: 5px;
+    margin-left:auto;
+    height: 100%;
+    width: 30%;
+    animation-name: logoshow;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; 
+  }
+  
+  @keyframes logoshow {
+    0% {height: 100%; width: 30%; }
+    16% {height: 75%; width: 20%; }
+    33% {height: 50%; width: 10%; }
+    49% {height: 25%; width: 5%; }
+    65% {height: 50%; width: 10%;}
+    81% {height: 75%; width: 20%;}
+    100% {height: 100%; width: 30%;}
+  }
+  
+  .logo img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*Main Forest Background*/
+  
+   .picture {
+      padding: 0px;
+      border: 2px solid black;
+      margin: 5px;
+      width: 100%;
+      height: 600px;
+      background-image: url('forest.jpg');
+      position: relative;
+   }
+  
+  .forest img {
+    width: 100%;
+    height: 650px;
+  }
+  
+   .fbox {
+     padding: 5px;
+     margin: 5px;
+     position: absolute;
+     width: 120px;
+     height: 100px;
+     top: 80px;
+     left: 20px;
+     color: white;
+   }
+  
+  #button {
+    color: brown;
+  }
+  
+   /*Trout*/
+  .trout img {
+    padding: 1px;
+    border: 2px solid rgb(36, 32, 32);
+    border-radius: 25px;
+    margin: 2px;
+    position: absolute;
+    float: left;
+    width: 7%;
+    height: 7%;
+    bottom: 10px;
+    left: 200px;
+    animation-name: swim;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes swim {
+    0% {left: 185px;}
+    25% {left: 200px;}
+    50% {left: 185px;}
+    100% {left: 200px;}
+    }
+  
+  .tbox {
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    color: white;
+    bottom: 10px;
+    left: 90px;
+    font-size: 14px;
+  }
+  
+  /*Deer*/
+  .deer img {
+    display: block;
+    border: 2px solid brown (26, 22, 22);
+    border-radius: 25px;
+    float: right;
+    padding: 0px;
+    margin:auto;
+    position: absolute;
+    height: 17%;
+    width: 17%;
+    top: 530px;
+    right: 125px;
+    animation-name: run;
+    animation-duration: 30s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes run {
+    0% {margin-top: 1px;}
+    25% {margin-top: 15px;}
+    50% {margin-top: 1px;}
+    100% {margin-top: 15px;}
+  }
+  
+  .dbox {
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    top: 460px;
+    right: 130px;
+    font-size:14px;
+    color:white;
+  }
+  
+  
+  
